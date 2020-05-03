@@ -10,22 +10,26 @@
     <title></title>
 </head>
 <body>
-<?php
-    include "./components/navbar.component.php";
-    echo createNavbar();
-?>
-    <form action="create_recipe.php" method="POST">
-        <input type="text" name="recipe_name" placeholder="Recipe Name">
-        <br>
-        <input type="text" name="author" placeholder="Author">
-        <br>
-        <input type="text" name="ingredients" placeholder="Ingredients">
-        <br>
-        <input type="text" name="instructions" placeholder="Instructions">
-        <br>
-        <button type="submit" name="submit">Submit</button>
-    </form>
+    <?php
+        include "./components/navbar.component.php";
+        include "./components/recipe_template.component.php";
+        echo createNavbar();
+    ?>
 
+    <div class="row">
+        <div class="col-3">
+        </div>
+        <div class="col-9">
+            <h2>Create a Recipe</h2>
+            <?php
+                echo createRecipeTemplate();
+            ?>
+        </div>
+    </div>
+ 
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/248d496a38.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
