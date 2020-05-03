@@ -10,7 +10,11 @@
     <title></title>
 </head>
 <body>
-    <form role="form" action="create_recipe.php" method="POST">
+<?php
+    include "./components/navbar.component.php";
+    echo createNavbar();
+?>
+    <form action="create_recipe.php" method="POST">
         <input type="text" name="recipe_name" placeholder="Recipe Name">
         <br>
         <input type="text" name="author" placeholder="Author">
