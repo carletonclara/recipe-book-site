@@ -10,5 +10,12 @@
         VALUES ('$recipe_name','$author','$ingredients','$instructions');";
     mysqli_query($conn, $sql);
 
-    header("Location: index.php?create_recipe=success");
+    #Get the id of the inserted recipe to get view
+    if ($conn->query($sql) === TRUE) {
+        $last_id = $conn->insert_id;
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+
+    header("Location: recipe_card.php?id={$last_id}");
 ?>

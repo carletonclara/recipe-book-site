@@ -13,17 +13,23 @@
     <?php
         include "./components/navbar.component.php";
         include "./components/recipe_template.component.php";
-        echo createNavbar();
+        
     ?>
 
-    <div class="row">
-        <div class="col-3">
-        </div>
-        <div class="col-9">
-            <h2>Create a Recipe</h2>
-            <?php
-                echo createRecipeTemplate();
-            ?>
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-3">
+                <button type="button" class="btn btn-dark">
+                    New Recipe 
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+            <div class="col-9">
+                <h2>Create a Recipe</h2>
+                <?php
+                    echo createRecipeTemplate();
+                ?>
+            </div>
         </div>
     </div>
  
