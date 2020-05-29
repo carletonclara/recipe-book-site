@@ -27,11 +27,35 @@ if(isset($_GET['id'])){
         include "./components/navbar.component.php";
     ?>
 
-    <h1><?php echo $row['recipe_name'] ?></h1>
-    <h2><?php echo $row['author'] ?></h2>
+    <div class="container mt-2">
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-3">
+                        <h1><?php echo $row['recipe_name'] ?></h1>
+                        <h2>by <?php echo $row['author'] ?></h2>
+                    </div>
+                    <div class="col-9"></div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-3">
+                        <h3>Ingredients</h3>
+                        <p><?php echo $row['ingredients'] ?></p>
+                    </div>
+                    <div class="col-9">
+                        <h3>Instructions</h3>
+                        <p><?php echo $row['instructions'] ?></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <p><?php echo $row['ingredients'] ?></p>
-    <p><?php echo $row['instructions'] ?></p>
+    
+
+    
 
 
 </body>

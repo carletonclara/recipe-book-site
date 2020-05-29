@@ -8,7 +8,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link" href="show_recipes.php">Recipes</a>
-                    <a class="nav-item nav-link" href="#">Meal Plan</a>
+                    <a class="nav-item nav-link" href="show_calendar.php">Meal Plan</a>
                 </div>
                 </div>
             </nav> 

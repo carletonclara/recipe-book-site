@@ -19,16 +19,13 @@
     <div class="container mt-2">
         <div class="row">
             <div class="col-3">
-                <button type="button" class="btn btn-dark">
+                <a class="btn btn-dark" href="./create_recipe_page.php" role="button">
                     New Recipe 
                     <i class="fas fa-plus"></i>
-                </button>
+                </a>
             </div>
-            <div class="col-9">
-                <h2>Create a Recipe</h2>
-                <?php
-                    echo createRecipeTemplate();
-                ?>
+            <div class="col-9">           
+                <h2>Clara's Recipe Book</h2>
             </div>
         </div>
     </div>

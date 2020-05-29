@@ -40,7 +40,10 @@
                             <div class="col-7">
                                 <div class="form-group">
                                     <label for="exampleFormControlTextarea1">Instructions</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" name="instructions" rows="10"></textarea>
+                                    <ul id="tasksUL">
+                                    <li>test</li>
+                                    </ul>
+                                    <input class="form-control" type="text" name="instructions" value="" spellcheck="false" placeholder="New Task" id="newtask">
                                 </div>
                             </div>
                         </div>

@@ -8,7 +8,6 @@
 
     $sql = "INSERT INTO recipe (recipe_name, author, ingredients, instructions)
         VALUES ('$recipe_name','$author','$ingredients','$instructions');";
-    mysqli_query($conn, $sql);
 
     #Get the id of the inserted recipe to get view
     if ($conn->query($sql) === TRUE) {
