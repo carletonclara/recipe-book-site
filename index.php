@@ -16,6 +16,13 @@
         
     ?>
 
+    <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Clara's Recipe Book</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    </div>
+    </div>
+
     <div class="container mt-2">
         <div class="row">
             <div class="col-3">
@@ -24,8 +31,29 @@
                     <i class="fas fa-plus"></i>
                 </a>
             </div>
-            <div class="col-9">           
-                <h2>Clara's Recipe Book</h2>
+            <div class="col-3">           
+                <div class="card">
+                    <div class="card-body">
+                        
+                    </div>
+                </div>
+                <h5>Recipe Name</h5>
+            </div>
+            <div class="col-3">           
+                <div class="card">
+                    <div class="card-body">
+                        
+                    </div>
+                </div>
+                <h5>Recipe Name</h5>
+            </div>
+            <div class="col-3">           
+                <div class="card">
+                    <div class="card-body">
+                        
+                    </div>
+                </div>
+                <h5>Recipe Name</h5>
             </div>
         </div>
     </div>

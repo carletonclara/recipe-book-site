@@ -28,29 +28,26 @@ if(isset($_GET['id'])){
     ?>
 
     <div class="container mt-2">
-        <div class="card">
-            <div class="card-header">
-                <div class="row">
-                    <div class="col-3">
-                        <h1><?php echo $row['recipe_name'] ?></h1>
-                        <h2>by <?php echo $row['author'] ?></h2>
-                    </div>
-                    <div class="col-9"></div>
-                </div>
-            </div>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-3">
-                        <h3>Ingredients</h3>
-                        <p><?php echo $row['ingredients'] ?></p>
-                    </div>
-                    <div class="col-9">
-                        <h3>Instructions</h3>
-                        <p><?php echo $row['instructions'] ?></p>
-                    </div>
-                </div>
+        <div class="row m-2 text-center">
+            <div class="col">
+                <h1><?php echo $row['recipe_name'] ?></h1>
+                <h2>by <?php echo $row['author'] ?></h2>
             </div>
         </div>
+
+        <hr>
+    
+        <div class="row m-2">
+            <div class="col-3">
+                <h3>Ingredients</h3>
+                <p><?php echo $row['ingredients'] ?></p>
+            </div>
+            <div class="col-9">
+                <h3>Instructions</h3>
+                <p><?php echo $row['instructions'] ?></p>
+            </div>
+        </div>
+
     </div>
 
     

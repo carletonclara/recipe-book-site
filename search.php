@@ -1,8 +1,16 @@
 <?php
     include_once 'connect.php';
+    $search = $_POST['search'];
 
-    $sql = "SELECT * FROM recipe;";
+    // Check connection
+    if (mysqli_connect_errno())
+      {
+      echo "Failed to connect to MySQL: " . mysqli_connect_error();
+      }
+
+    $sql = "SELECT * FROM recipe WHERE recipe_name LIKE '%{$search}%' OR author LIKE '%{$search}%';";
     $result = mysqli_query($conn, $sql);
+
     $resultCheck = mysqli_num_rows($result);
 
     if($resultCheck > 0) {
@@ -31,6 +39,5 @@
             ";
         }
     }
-
-    
-?>
+    mysqli_close($conn);
+    ?>
