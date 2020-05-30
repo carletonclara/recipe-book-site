@@ -11,8 +11,7 @@
 </head>
 <body>
     <?php
-        include "./components/navbar.component.php";
-        include "./components/recipe_template.component.php";       
+        include "./components/navbar.component.php"; 
     ?>
 
     <div class="container mt-2">

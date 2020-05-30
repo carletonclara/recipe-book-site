@@ -12,7 +12,6 @@
 <body>
     <?php
         include "./components/navbar.component.php";
-        include "./components/recipe_template.component.php";
         
     ?>
 

@@ -24,12 +24,12 @@
                 </a>
             </div>
             <div class="col-9">
-                <form class="form-inline" action="search.php" method="POST">
+                <form class="form-inline" action="" method="GET">
                     <input class="form-control mr-sm-2" type="text" name="search" />
                     <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
                 </form>           
                 <?php
-                    include "./components/recipe_list_item.component.php";
+                    include './search_results.php';
                 ?>
             </div>
         </div>

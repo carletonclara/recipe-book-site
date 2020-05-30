@@ -1,6 +1,6 @@
 <?php
     include_once 'connect.php';
-    $search = $_POST['search'];
+    $search = !empty($_POST['search']) ? $_POST['search'] : (!empty($_GET['search']) ? $_GET['search'] : null);
 
     // Check connection
     if (mysqli_connect_errno())
@@ -13,31 +13,6 @@
 
     $resultCheck = mysqli_num_rows($result);
 
-    if($resultCheck > 0) {
-        while($row = mysqli_fetch_assoc($result)){
-            echo "
-            <div class='card'>
-                <div class='card-body'>
-                    <div class='row'>
-                        <div class='col-3'>
-                            <a href='recipe_card.php?id={$row['id']}'>{$row['recipe_name']}</a>
-                        </div>
-                        <div class='col-3'>
-                            by {$row['author']}
-                        </div>
-                        <div class='col-3'>
-                            <a href='recipe_card.php?id={$row['id']}'>Edit</a>
-                        </div>
-                        <div class='col-3'>
-                            <div onclick='toggleFavorite()'>
-                                <i class='far fa-star' id='star{$row['id']}'></i>
-                            </div>
-                        </div>
-                    </div>           
-                </div>
-            </div>
-            ";
-        }
-    }
+    return $resultCheck;
     mysqli_close($conn);
     ?>
