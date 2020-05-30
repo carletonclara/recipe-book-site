@@ -1,6 +1,6 @@
 <?php
     echo "
-    <div class='card'>
+    <div class='card my-1'>
         <div class='card-body'>
             <div class='row'>
                 <div class='col-3'>

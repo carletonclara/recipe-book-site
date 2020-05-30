@@ -7,33 +7,39 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
     <title></title>
 </head>
-<body>
-    <?php
-        include "./components/navbar.component.php";      
+<body class="bg-light">
+    <?php 
         include_once 'connect.php';
     ?>
+
+    <header>
+        <?php
+            include "./components/navbar.component.php";
+        ?>
+    </header>
     
-    <div class="container mt-2">
-        <div class="row">
-            <div class="col-3">
-                <a class="btn btn-dark" href="./create_recipe_page.php" role="button">
-                    New Recipe 
-                    <i class="fas fa-plus"></i>
-                </a>
+    <main>
+        <div class="container mt-2">
+            <div class="row mt-4 mb-3">
+                <div class="col">
+                    <form class="form-inline float-right" action="" method="GET">
+                        <input class="form-control mr-sm-2" type="text" name="search" />
+                        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
-            <div class="col-9">
-                <form class="form-inline" action="" method="GET">
-                    <input class="form-control mr-sm-2" type="text" name="search" />
-                    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-                </form>           
-                <?php
-                    include './search_results.php';
-                ?>
+            <div class="row">
+                <div class="col">          
+                    <?php
+                        include './search_results.php';
+                    ?>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/248d496a38.js" crossorigin="anonymous"></script>

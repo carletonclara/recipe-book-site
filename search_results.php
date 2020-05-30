@@ -6,7 +6,9 @@
             include './components/recipe_list_item.component.php';
         }
     } else {
-        include 'recipe_list.php';
+        echo '<div class="alert alert-warning" role="alert">
+                No Results!
+            </div>';
     }
 
 ?>

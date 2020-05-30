@@ -7,55 +7,52 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
     <title></title>
 </head>
 <body>
-    <?php
-        include "./components/navbar.component.php";
-        
-    ?>
-
-    <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-        <h1 class="display-4">Clara's Recipe Book</h1>
-        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-    </div>
-    </div>
-
-    <div class="container mt-2">
-        <div class="row">
-            <div class="col-3">
-                <a class="btn btn-dark" href="./create_recipe_page.php" role="button">
-                    New Recipe 
-                    <i class="fas fa-plus"></i>
-                </a>
-            </div>
-            <div class="col-3">           
-                <div class="card">
-                    <div class="card-body">
-                        
-                    </div>
-                </div>
-                <h5>Recipe Name</h5>
-            </div>
-            <div class="col-3">           
-                <div class="card">
-                    <div class="card-body">
-                        
-                    </div>
-                </div>
-                <h5>Recipe Name</h5>
-            </div>
-            <div class="col-3">           
-                <div class="card">
-                    <div class="card-body">
-                        
-                    </div>
-                </div>
-                <h5>Recipe Name</h5>
+    <header>
+        <?php
+            include "./components/navbar.component.php";
+        ?>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Clara's Recipe Book</h1>
+                <p class="lead">Welcome to my recipe database!</p>
             </div>
         </div>
-    </div>
+    </header>
+
+    <main>        
+        <div class="container mt-2">
+            <div class="row">
+                <div class="col-4">           
+                    <div class="card">
+                        <div class="card-body">
+                            
+                        </div>
+                    </div>
+                    <h5>Recipe Name</h5>
+                </div>
+                <div class="col-4">           
+                    <div class="card">
+                        <div class="card-body">
+                            
+                        </div>
+                    </div>
+                    <h5>Recipe Name</h5>
+                </div>
+                <div class="col-4">           
+                    <div class="card">
+                        <div class="card-body">
+                            
+                        </div>
+                    </div>
+                    <h5>Recipe Name</h5>
+                </div>
+            </div>
+        </div>
+    </main>
  
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/248d496a38.js" crossorigin="anonymous"></script>
