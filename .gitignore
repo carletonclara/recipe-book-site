@@ -3,3 +3,6 @@ dbLoginCredentials.php
 
 #Ignore database files
 *.sql
+
+#ignore fullcalendar files
+/fullcalendar/*
